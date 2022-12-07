@@ -7,6 +7,10 @@ ___
   ```
   createdb go_jwt_template_dev
   ```
+- Set up development db user
+  ```
+  createuser go_jwt_template_user
+  ```
 - Run migration:
   ```
   psql -U go_jwt_template_user -d go_jwt_template_dev -a -f internal/storage/migrations/schema.sql
